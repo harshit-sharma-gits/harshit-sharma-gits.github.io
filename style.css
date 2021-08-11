@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Declaring some Variables to use */
+:root {
+    --main-radius: 5px;
+}
+
+/* Setting up font and Background Color for the whole page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.homecontainer {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 10fr 1.1fr;
+    grid-template-areas: 
+        "nav nav"
+        "home_intro home_img"
+        "home_social home_social";
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 2rem;
+    text-align: center;
+}
+
+nav {
+    background-color: aqua;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    float: right;
+}
+
+nav ul li a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.homecontainer #home_intro {
+    background-color: aquamarine;
+    grid-area: home_intro;
+    border-radius: var(--main-radius);
+}
+
+.homecontainer #home_img {
+    background-color: blueviolet;
+    grid-area: home_img;
+    border-radius: var(--main-radius);
+}
+
+.homecontainer #home_social {
+    background-color: coral;
+    grid-area: home_social;
+    border-radius: var(--main-radius);
+}

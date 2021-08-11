@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 /* Declaring some Variables to use */
 :root {
@@ -20,13 +21,13 @@ body {
         "nav nav"
         "home_intro home_img"
         "home_social home_social";
-    grid-column-gap: 0.5rem;
+    grid-column-gap: 5rem;
     grid-row-gap: 2rem;
     text-align: center;
 }
 
 nav {
-    background-color: aqua;
+    /* background-color: aqua; */
     grid-area: nav;
     border-radius: var(--main-radius);
 }
@@ -59,16 +60,36 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+nav ul #logo {
+    display: inline;
+    float: left;
+}
+
+nav ul #logo a {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 25px;
+    color: gray;
+    padding: 11.5px;
+}
+
+nav ul #logo a:hover {
+    color: black;
+    font-weight: normal;
+    background-color: rgb(238, 238, 238);
+}
+
 .homecontainer #home_intro {
     background-color: aquamarine;
     grid-area: home_intro;
     border-radius: var(--main-radius);
+    margin-left: 2rem;
 }
 
 .homecontainer #home_img {
     background-color: blueviolet;
     grid-area: home_img;
     border-radius: var(--main-radius);
+    margin-right: 2rem;
 }
 
 .homecontainer #home_social {

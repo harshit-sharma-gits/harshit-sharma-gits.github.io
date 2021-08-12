@@ -76,6 +76,10 @@ nav #logo:hover {
     background-color: rgb(238, 238, 238);
 }
 
+nav .navHamburgerIcon {
+    display: none;
+}
+
 .homecontainer #home_intro {
     background-color: aquamarine;
     grid-area: home_intro;

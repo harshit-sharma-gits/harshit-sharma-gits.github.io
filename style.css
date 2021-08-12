@@ -73,6 +73,11 @@ body {
 }
 
 
+nav .navHamburgerIcon {
+    display: none;
+}
+
+
 .homecontainer #home_intro {
     background-color: aquamarine;
     grid-area: home_intro;

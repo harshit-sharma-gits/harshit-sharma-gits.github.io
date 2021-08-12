@@ -118,9 +118,9 @@ body {
 {
     .homecontainer {
         display: grid;
-        height: 180vh;
+        height: 150vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 3.5fr 2fr 0.6fr;
+        grid-template-rows: 3fr 2fr 1fr;
         grid-template-areas: 
             "home_img"
             "home_intro"
@@ -147,6 +147,8 @@ body {
     .homecontainer #home_intro {
         margin-top: 0;
         margin-bottom: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .homecontainer #home_img img {
         width: 100%;

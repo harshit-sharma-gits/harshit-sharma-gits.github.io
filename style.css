@@ -14,9 +14,9 @@ body {
 
 .homecontainer {
     display: grid;
-    height: 97vh;
+    height: 110vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 10fr 1.1fr;
+    grid-template-rows: 1.2fr 10fr 1.2fr;
     grid-template-areas: 
         "nav nav"
         "home_intro home_img"
@@ -81,15 +81,29 @@ nav .navHamburgerIcon {
 }
 
 .homecontainer #home_intro {
-    background-color: aquamarine;
+    /* background: linear-gradient(aquamarine, aqua); */
     grid-area: home_intro;
     border-radius: var(--main-radius);
-    margin-left: 2rem;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4rem;
     margin-right: 2rem;
 }
 
+.homecontainer #home_intro #homepageName {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+
+.homecontainer #home_intro #homepageIntroText {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: rgb(90, 90, 90);
+}
+
 .homecontainer #home_img {
-    background-color: blueviolet;
     grid-area: home_img;
     border-radius: var(--main-radius);
     margin-left: 2rem;
@@ -104,7 +118,7 @@ nav .navHamburgerIcon {
     margin-right: 2rem;
 }
 
-@media only screen and (max-width: 650px)
+@media only screen and (max-width: 800px)
 {
     .homecontainer {
         display: grid;

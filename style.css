@@ -99,7 +99,7 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .homecontainer #home_social .social_media_icon {

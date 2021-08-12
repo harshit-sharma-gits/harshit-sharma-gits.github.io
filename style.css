@@ -64,7 +64,6 @@ body {
     text-align: center;
 }
 .homecontainer #home_intro {
-    background-color: burlywood;
     grid-area: home_intro;
     text-align: left;
     margin-top: auto;
@@ -86,7 +85,6 @@ body {
 }
 
 .homecontainer #home_img {
-    background-color: burlywood;
     grid-area: home_img;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -97,7 +95,6 @@ body {
 }
 
 .homecontainer #home_social {
-    background-color: burlywood;
     grid-area: home_social;
     margin-left: 2rem;
     margin-right: 2rem;

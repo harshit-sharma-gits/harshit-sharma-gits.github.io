@@ -19,7 +19,7 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(94, 25, 206);
-}
+}   
 
 /* Setting up font and Background Color for the whole page */
 body {
@@ -72,82 +72,72 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
-.homecontainer {
+.contactcontainer {
     display: grid;
-    height: 110vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10fr 1.2fr;
     grid-template-areas: 
-        "home_intro home_img"
-        "home_social home_social";
-    grid-row-gap: 2rem;
-    text-align: center;
+        "img matter";
+    height: 450px;
+    width: auto;
 }
-.homecontainer #home_intro {
-    grid-area: home_intro;
-    text-align: left;
+
+.contactcontainer .contact_image {  
+    grid-area: img;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 4rem;
-    margin-right: 2rem;
 }
 
-.homecontainer #home_intro #homepageName {
-    font-size: 2.7rem;
-    font-weight: bold;
-    color: rgb(77, 77, 77);
+.contactcontainer .contact_image img {
+    width: 55%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(10px 10px 5px rgb(119, 119, 119));
 }
 
-.homecontainer #home_intro #homepageIntroText {
-    font-size: 1.3rem;
-    font-weight: normal;
-    color: rgb(90, 90, 90);
-}
-
-.homecontainer #home_img {
-    grid-area: home_img;
+.contactcontainer .contact_matter {
+    grid-area: matter;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(133, 133, 133);
+    text-align: center;
+    padding-top: 70px;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-.homecontainer #home_img img {
-    width: 85%;
-}
-
-.homecontainer #home_social {
-    grid-area: home_social;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.contactcontainer .contact_matter .social_media_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.homecontainer #home_social .social_media_icon {
-    font-size: 1.5rem;
-    color: black;
-    margin-bottom: auto;
-    margin-top: auto;
+.contactcontainer .contact_matter .contact_heading {
+    font-size: 40px;
+    color: rgb(109, 109, 109);
 }
 
-.homecontainer #home_social .social_media_icon:hover {
-    font-size: 1.8rem;
+.contactcontainer .contact_matter .contact_para {
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+}
+
+.contactcontainer .contact_matter .social_media_grid .social_media_icon {
+    font-size: 25px;
+    color: rgb(102, 101, 101);
+}
+
+.contactcontainer .contact_matter .social_media_grid .social_media_icon:hover {
+    font-size: 40px;
     color: blueviolet;
 }
 
 @media only screen and (max-width: 800px)
 {
-    .homecontainer {
-        display: grid;
-        height: 130vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 2fr 1fr;
-        grid-template-areas: 
-            "home_img"
-            "home_intro"
-            "home_social";
-        grid-row-gap: 1rem;
-        text-align: center;
-    }
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -164,16 +154,36 @@ body {
       display: block;
       text-align: left;
     }
-    .homecontainer #home_intro {
+    .contactcontainer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "img img"
+            "matter matter";
+        height: 800px;
+        width: 100vw;
+    }
+    .contactcontainer .contact_image {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         margin-top: 0;
-        margin-bottom: auto;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-bottom: 0;
     }
-    .homecontainer #home_img img {
-        width: 100%;
+    .contactcontainer .contact_matter {
+        padding-top: 30px;
     }
-    .homecontainer #home_social {
-        margin-top: 4rem;
+    .contactcontainer .contact_matter .contact_heading {
+        font-size: 30px;
+    }
+    
+    .contactcontainer .contact_matter .contact_para {
+        font-size: 20px;
+    }
+    .contactcontainer .contact_matter .social_media_grid .social_media_icon {
+        font-size: 20px;
+    }
+    
+    .contactcontainer .contact_matter .social_media_grid .social_media_icon:hover {
+        font-size: 35px;
     }
 }
